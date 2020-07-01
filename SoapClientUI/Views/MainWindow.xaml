@@ -1,0 +1,111 @@
+﻿<Window x:Class="SoapClientUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:p = "clr-namespace:SoapClientUI.Properties"
+        mc:Ignorable="d"
+        Title="Opto+ Client UI" Height="Auto" Width="Auto" WindowStyle="None" ResizeMode="CanResizeWithGrip" AllowsTransparency="True" WindowStartupLocation="CenterScreen"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Background="{DynamicResource PrimaryHueMidForegroundBrush}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Icon="/Images/LogoSoap.ico">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="Menu" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Border BorderThickness="1" BorderBrush="{DynamicResource PrimaryHueMidBrush}">
+                <Image x:Name="LogoSoap" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="UniformToFill" Height="300" Source="/Images/LogoSoap.png"/>
+            </Border>
+            <ListBox Grid.Row="1" ItemsSource="{Binding MenuItems}" Background="White" BorderThickness="1,0,0,1" BorderBrush="{DynamicResource PrimaryHueMidBrush}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <materialDesign:PackIcon Grid.Column="0" Kind="{Binding PackIconKind}" VerticalAlignment="Center"/>
+                            <Separator Grid.Column="1" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                            <StackPanel Grid.Column="2">
+                                <TextBlock FontWeight="Bold" Text="{Binding Title}" />
+                                <TextBlock Text="{Binding Description}" />
+                            </StackPanel>
+                            <Grid.InputBindings>
+                                <MouseBinding Gesture="LeftClick" Command="{Binding Command}" />
+                            </Grid.InputBindings>
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ListBox>
+        </Grid>
+        <GroupBox
+            Grid.Column="1">
+            <GroupBox.HeaderTemplate>
+                <DataTemplate>
+                    <Grid MouseDown="Grid_MouseDown">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <ToggleButton Grid.Column="0" Style="{DynamicResource MaterialDesignHamburgerToggleButton}" IsChecked="True" Click="OpenMenu">
+                            <materialDesign:PackIcon Kind="Menu" />
+                        </ToggleButton>
+                        <TextBlock Grid.Column="1" Text="{x:Static p:Resources.App_Title}" Style="{DynamicResource MaterialDesignTitleTextBlock}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <StackPanel Grid.Column="2" Orientation="Horizontal">
+                            <ToggleButton Style="{StaticResource MaterialDesignActionToggleButton}" Command="{Binding Path=DataContext.NavigateSettingsCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}">
+                                <ToggleButton.Content>
+                                    <materialDesign:PackIcon Kind="Settings" />
+                                </ToggleButton.Content>
+                                <materialDesign:ToggleButtonAssist.OnContent>
+                                    <materialDesign:PackIcon  Kind="Settings" />
+                                </materialDesign:ToggleButtonAssist.OnContent>
+                            </ToggleButton>
+                            <ToggleButton Style="{StaticResource MaterialDesignActionToggleButton}" ToolTip="{x:Static p:Resources.App_Refresh}" Command="{Binding Path=DataContext.RefreshCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding ElementName=Frame}">
+                                <ToggleButton.Content>
+                                    <materialDesign:PackIcon Kind="Refresh" />
+                                </ToggleButton.Content>
+                                <materialDesign:ToggleButtonAssist.OnContent>
+                                    <materialDesign:PackIcon  Kind="Refresh" />
+                                </materialDesign:ToggleButtonAssist.OnContent>
+                            </ToggleButton>
+                            <ToggleButton Style="{StaticResource MaterialDesignActionToggleButton}" ToolTip="{x:Static p:Resources.App_Minimize}" Command="{Binding Path=DataContext.MinimizeCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}">
+                                <ToggleButton.Content>
+                                    <materialDesign:PackIcon Kind="WindowMinimize" />
+                                </ToggleButton.Content>
+                                <materialDesign:ToggleButtonAssist.OnContent>
+                                    <materialDesign:PackIcon  Kind="WindowMinimize" />
+                                </materialDesign:ToggleButtonAssist.OnContent>
+                            </ToggleButton>
+                            <ToggleButton Style="{StaticResource MaterialDesignActionToggleButton}" ToolTip="{x:Static p:Resources.App_Fullscreen}" Command="{Binding Path=DataContext.FullscreenCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}">
+                                <ToggleButton.Content>
+                                    <materialDesign:PackIcon Kind="Fullscreen" />
+                                </ToggleButton.Content>
+                                <materialDesign:ToggleButtonAssist.OnContent>
+                                    <materialDesign:PackIcon  Kind="FullscreenExit" />
+                                </materialDesign:ToggleButtonAssist.OnContent>
+                            </ToggleButton>
+                            <ToggleButton Style="{StaticResource MaterialDesignActionToggleButton}" Command="{Binding Path=DataContext.CloseCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}">
+                                <ToggleButton.Content>
+                                    <materialDesign:PackIcon Kind="Close" />
+                                </ToggleButton.Content>
+                                <materialDesign:ToggleButtonAssist.OnContent>
+                                    <materialDesign:PackIcon  Kind="Close" />
+                                </materialDesign:ToggleButtonAssist.OnContent>
+                            </ToggleButton>
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </GroupBox.HeaderTemplate>
+            <Frame Grid.Row="1" x:Name="Frame" NavigationUIVisibility="Hidden"/>
+        </GroupBox>
+    </Grid>
+</Window>
