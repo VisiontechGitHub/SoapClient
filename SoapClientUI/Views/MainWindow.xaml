@@ -9,7 +9,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Background="{DynamicResource PrimaryHueMidForegroundBrush}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        Icon="/Images/LogoSoap.ico">
+        Icon="/Images/LogoOptoPlus.ico">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -21,7 +21,7 @@
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
             <Border BorderThickness="1" BorderBrush="{DynamicResource PrimaryHueMidBrush}">
-                <Image x:Name="LogoSoap" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="UniformToFill" Height="300" Source="/Images/LogoSoap.png"/>
+                <Image x:Name="LogoOptoPlus" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="UniformToFill" Height="300" Source="/Images/LogoOptoPlus.png"/>
             </Border>
             <ListBox Grid.Row="1" ItemsSource="{Binding MenuItems}" Background="White" BorderThickness="1,0,0,1" BorderBrush="{DynamicResource PrimaryHueMidBrush}">
                 <ItemsControl.ItemTemplate>
