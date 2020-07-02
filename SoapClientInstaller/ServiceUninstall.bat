@@ -1,2 +1,2 @@
-sc stop "SoapClient"
-sc delete "SoapClient"
+sc stop "Nebula20ClientService"
+sc delete "Nebula20ClientService"
