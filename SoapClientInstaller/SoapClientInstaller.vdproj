@@ -1113,7 +1113,7 @@
         {
             "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_0C49259DA8C8498FBEB3EB72BACEEFE9"
             {
-            "Name" = "8:Output primario from OptoPlusClientService (Active)"
+            "Name" = "8:Output primario from SoapClientService (Active)"
             "Condition" = "8:"
             "Object" = "8:_EF11AE46D48A45418F56061E5589D3F6"
             "FileType" = "3:2"
@@ -1127,7 +1127,7 @@
             }
             "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_8BAA09FC64204D9FA813805BB001D7F9"
             {
-            "Name" = "8:Output primario from OptoPlusClientService (Active)"
+            "Name" = "8:Output primario from SoapClientService (Active)"
             "Condition" = "8:"
             "Object" = "8:_EF11AE46D48A45418F56061E5589D3F6"
             "FileType" = "3:2"
@@ -3499,7 +3499,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_EF11AE46D48A45418F56061E5589D3F6"
             {
-            "SourcePath" = "8:..\\SoapClientService\\obj\\Debug\\OptoPlusClientService.exe"
+            "SourcePath" = "8:..\\SoapClientService\\obj\\Debug\\SoapClientService.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_BEE074ECE19440DC889B382DEA13202C"
