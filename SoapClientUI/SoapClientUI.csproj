@@ -270,10 +270,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\LogoOptoPlus.ico" />
-    <Resource Include="Images\LogoOptoPlus.png" />
-    <Resource Include="Images\LogoOptoPlus-Multi.ico" />
-    <Content Include="Images\LogoOptoPlus.svg" />
+    <Resource Include="Images\nebula20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LogoNebula20.ico" />
+    <Resource Include="Images\LogoNebula20.png" />
+    <Resource Include="Images\LogoNebula20-Multi.ico" />
+    <Content Include="Images\LogoNebula20.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
