@@ -41,7 +41,7 @@
             // 
             this.serviceInstaller1.Description = "Opto+ Client Service";
             this.serviceInstaller1.DisplayName = "Opto+ Client";
-            this.serviceInstaller1.ServiceName = "SoapClientService";
+            this.serviceInstaller1.ServiceName = "OptoPlusClientService";
             this.serviceInstaller1.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
             // 
             // ProjectInstaller

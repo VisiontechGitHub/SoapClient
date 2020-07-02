@@ -3,7 +3,7 @@
     public class Configurations
     {
 
-        public static string SERVICE_NAME = "SoapClientService";
+        public static string SERVICE_NAME = "OptoPlusClientService";
         public static string SERVICE_PATH = "SERVICE_PATH";
         public static string CAS_API_ENDPOINT = "CAS_API_ENDPOINT";
         public static string OPTOPLUS_API_ENDPOINT = "OPTOPLUS_API_ENDPOINT";

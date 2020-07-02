@@ -1,2 +1,2 @@
-sc stop "SoapClient"
-sc delete "SoapClient"
+sc stop "OptoPlusClientService"
+sc delete "OptoPlusClientService"
