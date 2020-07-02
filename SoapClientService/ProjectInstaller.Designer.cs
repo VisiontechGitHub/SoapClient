@@ -39,8 +39,8 @@
             // 
             // serviceInstaller1
             // 
-            this.serviceInstaller1.Description = "Opto+ Client Service";
-            this.serviceInstaller1.DisplayName = "Opto+ Client";
+            this.serviceInstaller1.Description = "Nebula20 Service";
+            this.serviceInstaller1.DisplayName = "Nebula20 Client";
             this.serviceInstaller1.ServiceName = "SoapClientService";
             this.serviceInstaller1.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
             // 
