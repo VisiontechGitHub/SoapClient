@@ -273,10 +273,10 @@
     <Resource Include="Images\nebula20.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\LogoNebula20.ico" />
-    <Resource Include="Images\LogoNebula20.png" />
-    <Resource Include="Images\LogoNebula20-Multi.ico" />
-    <Content Include="Images\LogoNebula20.svg" />
+    <Resource Include="Images\Logo.ico" />
+    <Resource Include="Images\Logo.png" />
+    <Resource Include="Images\Logo-Multi.ico" />
+    <Content Include="Images\Logo.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

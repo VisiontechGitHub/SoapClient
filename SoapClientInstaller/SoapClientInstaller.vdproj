@@ -1716,8 +1716,8 @@
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_531DFFBACAF0409F86FC3DDE5F311F46"
             {
-            "SourcePath" = "8:..\\SoapClientUI\\Images\\LogoNebula20-Multi.ico"
-            "TargetName" = "8:LogoNebula20-Multi.ico"
+            "SourcePath" = "8:..\\SoapClientUI\\Images\\Logo-Multi.ico"
+            "TargetName" = "8:Logo-Multi.ico"
             "Tag" = "8:"
             "Folder" = "8:_BEE074ECE19440DC889B382DEA13202C"
             "Condition" = "8:"
@@ -2170,8 +2170,8 @@
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_99AB907AB4F04A7592ECB136BE71D535"
             {
-            "SourcePath" = "8:..\\SoapClientUI\\Images\\LogoNebula20.ico"
-            "TargetName" = "8:LogoNebula20.ico"
+            "SourcePath" = "8:..\\SoapClientUI\\Images\\Logo.ico"
+            "TargetName" = "8:Logo.ico"
             "Tag" = "8:"
             "Folder" = "8:_BEE074ECE19440DC889B382DEA13202C"
             "Condition" = "8:"
@@ -2558,6 +2558,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CE1DF611E64F4F31BC41915686BAF28E"
+            {
+            "SourcePath" = "8:..\\SoapClientUI\\Images\\LogoMenu-Multi.ico"
+            "TargetName" = "8:LogoMenu-Multi.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_BEE074ECE19440DC889B382DEA13202C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D678B5AFD2AB5A44DD260AD1321B5E10"
