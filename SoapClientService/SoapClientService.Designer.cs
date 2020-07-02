@@ -34,7 +34,7 @@ namespace SoapClientService
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            this.ServiceName = typeof(SoapClientService).Name;
+            this.ServiceName = "Nebula20ClientService";
         }
 
         #endregion
