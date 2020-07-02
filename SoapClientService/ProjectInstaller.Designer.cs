@@ -41,7 +41,7 @@
             // 
             this.serviceInstaller1.Description = "Nebula20 Service";
             this.serviceInstaller1.DisplayName = "Nebula20 Client";
-            this.serviceInstaller1.ServiceName = "SoapClientService";
+            this.serviceInstaller1.ServiceName = "Nebula20ClientService";
             this.serviceInstaller1.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
             // 
             // ProjectInstaller
