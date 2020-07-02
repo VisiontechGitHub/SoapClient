@@ -20,7 +20,6 @@ namespace SoapClientUI.ViewModels.Commands
 
         public override void Execute(object parameter)
         {
-            Debug.WriteLine("MANNAGGIA A TUTTI");
             Window.Close();
         }
     }
