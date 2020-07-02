@@ -270,10 +270,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\LogoOptoPlus.ico" />
-    <Resource Include="Images\LogoOptoPlus.png" />
-    <Resource Include="Images\LogoOptoPlus-Multi.ico" />
-    <Content Include="Images\LogoOptoPlus.svg" />
+    <Resource Include="Images\Logo.ico" />
+    <Resource Include="Images\Logo.png" />
+    <Resource Include="Images\Logo-Multi.ico" />
+    <Content Include="Images\Logo.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
