@@ -223,9 +223,18 @@
     <value>Stop</value>
   </data>
   <data name="App_Title" xml:space="preserve">
-    <value>Nebula 2.0 Client Service Management</value>
+    <value>Opto+ Client Service Management</value>
   </data>
   <data name="App_Validations_Value_Cannot_Be_Empty" xml:space="preserve">
     <value>Value cannot be empty</value>
+  </data>
+  <data name="App_Settings_Service_Parameters_Gax" xml:space="preserve">
+    <value>Gax</value>
+  </data>
+  <data name="App_Settings_Service_Parameters_LapGax" xml:space="preserve">
+    <value>LapGax</value>
+  </data>
+  <data name="App_Validations_Value_Invalid" xml:space="preserve">
+    <value>Invalid value</value>
   </data>
 </root>
