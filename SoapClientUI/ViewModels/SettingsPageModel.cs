@@ -309,7 +309,7 @@ namespace SoapClientUI.ViewModels
                 configuration.AppSettings.Settings.Remove(Configurations.SERVICE_PATH);
                 configuration.AppSettings.Settings.Add(Configurations.SERVICE_PATH, Path);
                 configuration.Save();
-            }, "SoapClientService Executable|" + System.IO.Path.ChangeExtension(Configurations.SERVICE_NAME, ".exe"));
+            }, Configurations.SERVICE_NAME + " Executable|" + System.IO.Path.ChangeExtension(Configurations.SERVICE_NAME, ".exe"));
 
             SelectInputPathCommand = new OpenFolderCommand(Path => InputPath = Path);
             SelectOutputPathCommand = new OpenFolderCommand(Path => OutputPath = Path);
