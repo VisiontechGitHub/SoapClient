@@ -22,12 +22,12 @@ namespace SoapClientService.Writer
 
             IDictionary<double, IDictionary<double, threeDimensionalPointDTO>> map = new SortedDictionary<double, IDictionary<double, threeDimensionalPointDTO>>();
             points.ToList().ForEach(point => {
-                double row = point.x;
+                double row = point.y;
                 if (!map.ContainsKey(row))
                 {
                     map.Add(row, new SortedDictionary<double, threeDimensionalPointDTO>());
                 }
-                map[row].Add(-point.y, point);
+                map[row].Add(point.x, point);
             });
 
             streamWriter.WriteLine("SURFMT=" + string.Join(Separator, "1", side.LEFT.Equals(side) ? "L" : "R", "B", mass.ToString(), mass.ToString(), dimension.ToString(), dimension.ToString(), "0"));
