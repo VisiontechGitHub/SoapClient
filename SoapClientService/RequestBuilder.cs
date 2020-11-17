@@ -63,10 +63,10 @@ namespace SoapClientService
                 if (officeRegex.IsMatch(ldnam) && officeRegex.Match(ldnam) is Match OfficeMatch) {
                     design = OfficeMatch.Groups[1].Value;
                     distance = double.Parse(OfficeMatch.Groups[3].Value, CultureInfo.InvariantCulture);
-                    degressiveSphere = true;
-                    degressiveSphereValue = StringConverter.ExtractDoubleValue(parameters, OmaParameter.SPH) + StringConverter.ExtractDoubleValue(parameters, OmaParameter.ADD);
                     degressiveAddition = true;
                     degressiveAdditionValue = Math.Round(StringConverter.ExtractDoubleValue(parameters, OmaParameter.ADD) - 1D / distance, 2);
+                    degressiveSphere = true;
+                    degressiveSphereValue = StringConverter.ExtractDoubleValue(parameters, OmaParameter.SPH) + StringConverter.ExtractDoubleValue(parameters, OmaParameter.ADD) - degressiveAdditionValue;
                 }
                 if (farRegex.IsMatch(ldnam) && farRegex.Match(ldnam) is Match FarMatch)
                 {
