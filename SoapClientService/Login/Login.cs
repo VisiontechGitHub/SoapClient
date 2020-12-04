@@ -107,7 +107,9 @@ namespace SoapClientService.Login
                         group = new Org.Visiontech.CredentialGrouping.groupDTO
                         {
                         },
+                        validSpecified = true,
                         valid = true,
+                        deletedSpecified = true,
                         deleted = false
                     }
                 };
