@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -20,18 +21,26 @@ namespace SoapClientService.Writer
         {
             double mass = dimension + 1;
 
-            IDictionary<double, IDictionary<double, threeDimensionalPointDTO>> map = new SortedDictionary<double, IDictionary<double, threeDimensionalPointDTO>>();
+            IDictionary<double, IDictionary<double, threeDimensionalPointDTO>> map = new Dictionary<double, IDictionary<double, threeDimensionalPointDTO>>();
             points.ToList().ForEach(point => {
                 double row = point.x;
                 if (!map.ContainsKey(row))
                 {
-                    map.Add(row, new SortedDictionary<double, threeDimensionalPointDTO>());
+                    map.Add(row, new Dictionary<double, threeDimensionalPointDTO>());
                 }
-                map[row].Add(-point.y, point);
+                map[row].Add(point.y, point);
             });
 
             streamWriter.WriteLine("SURFMT=" + string.Join(Separator, "1", side.LEFT.Equals(side) ? "L" : "R", "B", mass.ToString(), mass.ToString(), dimension.ToString(), dimension.ToString(), "0"));
-            map.Values.ToList().ForEach(row => streamWriter.WriteLine("ZZ=" + string.Join(Separator, row.Values.Select(point => point.z.ToString(CultureInfo.InvariantCulture)))));
+            for (double x = points.Select(point => point.x).Min(); x <= points.Select(point => point.x).Max(); x++)
+            {
+                ICollection<threeDimensionalPointDTO> row = new List<threeDimensionalPointDTO>();
+                for (double y = points.Select(point => point.y).Min(); y <= points.Select(point => point.y).Max(); y++)
+                {
+                    row.Add(map[x][y]);
+                }
+                streamWriter.WriteLine("ZZ=" + string.Join(Separator, row.Select(point => point.z.ToString(CultureInfo.InvariantCulture))));
+            }
         }
     }
 }
