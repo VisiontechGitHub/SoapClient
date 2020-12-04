@@ -32,10 +32,10 @@ namespace SoapClientService.Writer
             });
 
             streamWriter.WriteLine("SURFMT=" + string.Join(Separator, "1", side.LEFT.Equals(side) ? "L" : "R", "B", mass.ToString(), mass.ToString(), dimension.ToString(), dimension.ToString(), "0"));
-            for (double x = points.Select(point => point.x).Min(); x <= points.Select(point => point.x).Max(); x++)
+            for (double y = points.Select(point => point.y).Min(); y <= points.Select(point => point.y).Max(); y++)
             {
                 ICollection<threeDimensionalPointDTO> row = new List<threeDimensionalPointDTO>();
-                for (double y = points.Select(point => point.y).Min(); y <= points.Select(point => point.y).Max(); y++)
+                for (double x = points.Select(point => point.x).Min(); x <= points.Select(point => point.x).Max(); x++)
                 {
                     row.Add(map[x][y]);
                 }
