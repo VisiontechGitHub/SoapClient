@@ -26,14 +26,22 @@ namespace SoapClientService.Writer
             streamWriter.WriteLine("[Data]");
             IDictionary<double, IDictionary<double, threeDimensionalPointDTO>> map = new SortedDictionary<double, IDictionary<double, threeDimensionalPointDTO>>();
             points.ToList().ForEach(point => {
-                double row = -point.y;
+                double row = point.x;
                 if (!map.ContainsKey(row))
                 {
-                    map.Add(row, new SortedDictionary<double, threeDimensionalPointDTO>());
+                    map.Add(row, new Dictionary<double, threeDimensionalPointDTO>());
                 }
-                map[row].Add(point.x, point);
+                map[row].Add(point.y, point);
             });
-            map.Values.ToList().ForEach(row => streamWriter.WriteLine(string.Join(Separator, row.Values.Select(point => point.z.ToString(CultureInfo.InvariantCulture)))));
+            for (double x = points.Select(point => point.x).Min(); x <= points.Select(point => point.x).Max(); x++)
+            {
+                ICollection<threeDimensionalPointDTO> row = new List<threeDimensionalPointDTO>();
+                for (double y = points.Select(point => point.y).Min(); y <= points.Select(point => point.y).Max(); y++)
+                {
+                    row.Add(map[x][y]);
+                }
+                streamWriter.WriteLine(string.Join(Separator, row.Select(point => point.z.ToString(CultureInfo.InvariantCulture))));
+            }
         }
 
     }
