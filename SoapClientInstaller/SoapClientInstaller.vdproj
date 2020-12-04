@@ -2895,15 +2895,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Nebula 2.0 Client"
-        "ProductCode" = "8:{BEEF0111-E5B9-4496-A750-F8DC5FCBD0B0}"
-        "PackageCode" = "8:{33369DC3-9899-4EFE-8069-3CA8CE7818C6}"
+        "ProductCode" = "8:{7ACCD584-BA84-4EF1-8DA1-7BFCB149C338}"
+        "PackageCode" = "8:{E07FE09D-BC6C-45C8-8C28-44426B840429}"
         "UpgradeCode" = "8:{C9F742A1-4928-40F5-B815-99DEAD2A87E4}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.15"
+        "ProductVersion" = "8:1.0.16"
         "Manufacturer" = "8:Nebula 2.0"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -3473,7 +3473,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_EF11AE46D48A45418F56061E5589D3F6"
             {
-            "SourcePath" = "8:..\\SoapClientService\\obj\\Debug\\SoapClientService.exe"
+            "SourcePath" = "8:..\\SoapClientService\\obj\\Debug\\Nebula20ClientService.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_BEE074ECE19440DC889B382DEA13202C"
