@@ -1473,11 +1473,6 @@
             "AssemblyAsmDisplayName" = "8:SoapClientUI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_2532659550360FF0E6DEEB2447A38498"
-                    {
-                    "Name" = "8:SoapClientUI.exe"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:SoapClientUI.exe"
             "TargetName" = "8:"
@@ -1535,11 +1530,6 @@
             "AssemblyAsmDisplayName" = "8:MaterialDesignThemes.Wpf, Version=2.6.0.325, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_3217002F5E27C8D822142E169AD244E4"
-                    {
-                    "Name" = "8:MaterialDesignThemes.Wpf.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:MaterialDesignThemes.Wpf.dll"
             "TargetName" = "8:"
@@ -1938,11 +1928,6 @@
             "AssemblyAsmDisplayName" = "8:SoapClientLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_84F8E57259C9EC2D5E38FB1D6609895B"
-                    {
-                    "Name" = "8:SoapClientLibrary.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:SoapClientLibrary.dll"
             "TargetName" = "8:"
@@ -2062,11 +2047,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.WindowsAPICodePack, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_8E688324C4AE7EBBBB0C38C2EBFBB832"
-                    {
-                    "Name" = "8:Microsoft.WindowsAPICodePack.DLL"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.WindowsAPICodePack.DLL"
             "TargetName" = "8:"
@@ -2155,11 +2135,6 @@
             "AssemblyAsmDisplayName" = "8:MaterialDesignColors, Version=1.2.0.325, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_9BCC6A1E695559C83789F98E3068F642"
-                    {
-                    "Name" = "8:MaterialDesignColors.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:MaterialDesignColors.dll"
             "TargetName" = "8:"
@@ -2372,11 +2347,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_B38C66F94C2AE995C82AFF56B57FC7DD"
-                    {
-                    "Name" = "8:Microsoft.WindowsAPICodePack.Shell.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.WindowsAPICodePack.Shell.dll"
             "TargetName" = "8:"
@@ -2895,15 +2865,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Nebula 2.0 Client"
-        "ProductCode" = "8:{7ACCD584-BA84-4EF1-8DA1-7BFCB149C338}"
-        "PackageCode" = "8:{E07FE09D-BC6C-45C8-8C28-44426B840429}"
+        "ProductCode" = "8:{A52E5E7B-C149-4ED7-99C4-67B45694AE99}"
+        "PackageCode" = "8:{8C5C5B27-5DB4-4793-AB3D-64B6F4E0BBEC}"
         "UpgradeCode" = "8:{C9F742A1-4928-40F5-B815-99DEAD2A87E4}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.16"
+        "ProductVersion" = "8:1.0.17"
         "Manufacturer" = "8:Nebula 2.0"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
