@@ -27,9 +27,9 @@ namespace SoapClientService.Writer
                 }
                 map[row].Add(point.y, point);
             });
-            for (double x = points.Select(point => point.x).Min(); x <= points.Select(point => point.x).Max(); x++)
+            for (double y = points.Select(point => point.y).Min(); y <= points.Select(point => point.y).Max(); y++)
             {
-                for (double y = points.Select(point => point.y).Min(); y <= points.Select(point => point.y).Max(); y++)
+                for (double x = points.Select(point => point.x).Min(); x <= points.Select(point => point.x).Max(); x++)
                 {
                     analyzedPointDTO point = map[x][y];
                     streamWriter.WriteLine(string.Join(Separator, new[] { point.x, point.y, point.z, point.cylinderMap, point.powerMap, point.cylinderAxis, point.thickness }.Select(value => value.ToString(CultureInfo.InvariantCulture))));
