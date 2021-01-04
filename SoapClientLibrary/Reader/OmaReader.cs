@@ -14,7 +14,7 @@ namespace SoapClientService.Reader
 
         public static readonly Regex ldsKeyRegex = new Regex("([^=]+)=[^=]+");
         public static readonly Regex ldsSingleValueRegex = new Regex("[^=]+=([^=]+)");
-        public static readonly Regex ldsDoubleValueRegex = new Regex("[^=]+=([^;]+);([^;]+)");
+        public static readonly Regex ldsDoubleValueRegex = new Regex("[^=]+=([^;]*);([^;]*)");
         
         public static OmaReaderResult Read(string path)
         {
