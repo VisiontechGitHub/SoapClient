@@ -2921,15 +2921,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Opto+ Client"
-        "ProductCode" = "8:{7992907C-079E-4EF9-A363-BC27725DAD8F}"
-        "PackageCode" = "8:{BFA8C56F-E582-4566-9450-38CBD238D276}"
+        "ProductCode" = "8:{7982835B-4602-4D0F-81E9-D35F9F089D36}"
+        "PackageCode" = "8:{61E88067-CE6F-4D2D-81AB-EC85D2F8E22F}"
         "UpgradeCode" = "8:{C9F742A1-4928-40F5-B815-99DEAD2A87E4}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.18"
+        "ProductVersion" = "8:1.0.19"
         "Manufacturer" = "8:Opto+"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -3499,7 +3499,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_EF11AE46D48A45418F56061E5589D3F6"
             {
-            "SourcePath" = "8:..\\SoapClientService\\obj\\Debug\\SoapClientService.exe"
+            "SourcePath" = "8:..\\SoapClientService\\obj\\Debug\\OptoPlusClientService.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_BEE074ECE19440DC889B382DEA13202C"
