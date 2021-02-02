@@ -236,7 +236,7 @@ namespace SoapClientService
                 secondaryPrismBaseSpecified = true,
                 minimalCentralThickness = StringConverter.ExtractDoubleValue(parameters, OmaParameter.MINCTR),
                 minimalCentralThicknessSpecified = true,
-                minimalSideThickness = StringConverter.ExtractDoubleValue(parameters, OmaParameter.MINEDG, 2.0),
+                minimalSideThickness = StringConverter.ExtractDoubleValue(parameters, OmaParameter.MINEDG, StringConverter.ExtractDoubleValue(parameters, OmaParameter.MINTHKCD, 2.0)),
                 minimalSideThicknessSpecified = true,
                 horizontalDecentralization = StringConverter.ExtractDoubleValue(parameters, OmaParameter.BCERIN, StringConverter.ExtractDoubleValue(parameters, OmaParameter.SMOCIN)),
                 horizontalDecentralizationSpecified = true,
